@@ -1,0 +1,8 @@
+.item{
+	display: inline-block;
+}
+
+.fig{
+	height: 150px;
+	cursor: pointer;
+}
