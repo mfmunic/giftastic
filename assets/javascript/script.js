@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var animals = ["dog","cat", "bear", "lion", "platypus", "whale", "octopus", "squid", "eagle", "penguin", "giraffe"];
+var animals = ["dog","cat", "tiger", "lion", "platypus", "whale", "octopus", "moose", "eagle", "penguin", "giraffe"];
 
 for(i=0; i<animals.length; i++){
     $("#buttons").append($("<button class=buts id=but"+i+" data-animal="+animals[i]+">"+animals[i]+"</button>"))
@@ -24,11 +24,13 @@ function addButton(event){
     	$("#buttons").append($("<button class=buts id=but"+i+" data-animal="+animals[i]+">"+animals[i]+"</button>"))
     	$("#but"+i).on("click", findGIF)
 	}
+
 }//end of addButton function
 
 
 function findGIF(){
 	$("#displayResults").empty();
+
 
 	var animal = $(this).attr("data-animal");
     var queryURL = "http://api.giphy.com/v1/gifs/search?q="+animal+"&api_key=dc6zaTOxFJmzC&limit=10";

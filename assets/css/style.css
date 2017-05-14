@@ -1,8 +1,22 @@
+body{
+	background-color: lightgray;
+}
+
 .item{
 	display: inline-block;
+	margin-right: 10px;
 }
 
 .fig{
 	height: 150px;
 	cursor: pointer;
+}
+
+button {
+	background-color: blue;
+	border: none;
+	color: white;
+	box-shadow: 2px 2px 3px black;
+	cursor: pointer;
+	margin: 2px;
 }
